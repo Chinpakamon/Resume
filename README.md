@@ -9,4 +9,4 @@ Good afternoon, I'm Vladislav, a Python developer, I'm always ready to learn new
 
 Any comments and suggestions are welcome!
 
-My Telegram @Chinpakamon
+My Telegram: @Chinpakamon
