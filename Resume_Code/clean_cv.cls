@@ -45,7 +45,7 @@
   \def\bibnamedelimi{ }%
   \def\bibinitperiod{.}%
   \def\bibinitdelim{ }%
-  \def\bibinithyphendelim{.-}}    
+  \def\bibinithyphendelim{.-}}
 \newcommand*{\makename}[3]{\begingroup\makenamesetup\xdef#1{#2, #3}\endgroup}
 
 \newbibmacro*{name:bold}[2]{%
@@ -111,4 +111,3 @@
 }
 
 \pagestyle{empty}
-

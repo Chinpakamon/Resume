@@ -1,6 +1,8 @@
 \documentclass{clean_cv}
 
 
+% Add a BibTeX-style file encoding all of your publications to include here. You can export this from Zotero. Only include
+% publications you want to appear here!
 \addbibresource{publications.bib}
 
 \author{Zakiev Vladislav}
@@ -9,11 +11,15 @@
 \begin{document}
 
 \maketitle
-
+% In this section, you can use any of the FontAwesome icons. The commands \faCenter and \faCenterStyle have been defined to properly center the icons
+% when using the default font settings.
+%
+% You can use any of the icons listed in the fontawesome5 package documentation (https://ctan.math.utah.edu/ctan/tex-archive/fonts/fontawesome5/doc/fontawesome5.pdf)
+% If you need to specify a specific style (as is done here for the address card), you should use the two-argument \faCenterCycle command
 \begin{center}
 \begin{tabular}{lll}
 {\scriptsize}
-    {\scriptsize}\faCenter{envelope} \color{blue}\href{mailto:zackieffv@yandex.ru}{zackieffv@yandex.ru}  & \faCenter{phone-alt} +7-917-894-07-09 
+    {\scriptsize}\faCenter{envelope} \color{blue}\href{mailto:zackieffv@yandex.ru}{zackieffv@yandex.ru}  & \faCenter{phone-alt} +7-917-894-07-09
      \faCenter{github} \color{blue}\href{https://github.com/Chinpakamon}{Projects} &
      \faTelegram{Chinpakamon}
 \end{tabular}
@@ -23,7 +29,13 @@
 
 \section{Education}
 
+% The datetabular environment takes one argument, which is the width of the left date column. As seen here:
+%   9em is a good choice for "dual-date" formats (e.g. Sep 2015 - Nov 2019).
+%   4em is a good choice for month/year dates (Sep 2014).
+%   2em is a good choice for year-only dates (as seen in the publications)
 \begin{datetabular}{9em}
+% This is just a tabular environment, for the most part. The dateentry command has been defined for
+% convienence. It takes two arguments, the first is the date and the second is whatever you wish placed to the right.
 
 \dateentry{Sep 2019 -- June 2023}{
 \textbf{Saint Petersburg State University of Industrial Technologies and Design}
@@ -31,7 +43,7 @@
 \textit{Bachelor of science in applied mathematics and computer science}
 }
 
- 
+
 
 \end{datetabular}
 \begin{datetabular}{9em}
@@ -53,12 +65,12 @@
 
 
 
- 
+
 \section{Skills}
 
 \textbf{Technical}
  \begin{itemize}
-   \item Python, Django, PostgreSQL, SQLite, SQL, Yandex.Cloud, Docker, Nginx, Linux, Git
+   \item Python, Django, DRF, FastAPI, PostgreSQL, SQLite, SQL, Yandex.Cloud, Docker, Nginx, Linux, Git
    \end{itemize}
    \vspace{0.5cm}
    
