@@ -1,129 +1,108 @@
 \documentclass{clean_cv}
 
-
-% Add a BibTeX-style file encoding all of your publications to include here. You can export this from Zotero. Only include
-% publications you want to appear here!
-\addbibresource{publications.bib}
-
 \author{Zakiev Vladislav}
-\headlineposition{Software Engineer}
+\headlineposition{Backend Software Engineer (Python)}
 
 \begin{document}
 
 \maketitle
-% In this section, you can use any of the FontAwesome icons. The commands \faCenter and \faCenterStyle have been defined to properly center the icons
-% when using the default font settings.
-%
-% You can use any of the icons listed in the fontawesome5 package documentation (https://ctan.math.utah.edu/ctan/tex-archive/fonts/fontawesome5/doc/fontawesome5.pdf)
-% If you need to specify a specific style (as is done here for the address card), you should use the two-argument \faCenterCycle command
 \begin{center}
 \begin{tabular}{lll}
 {\scriptsize}
-    {\scriptsize}\faCenter{envelope} \color{blue}\href{mailto:zackieffv@yandex.ru}{zackieffv@yandex.ru}  & \faCenter{phone-alt} +7-917-894-07-09 
-     \faCenter{github} \color{blue}\href{https://github.com/Chinpakamon}{Projects} &
-     \faTelegram{\color{blue} \href{https://t.me/Chinpakamon}{Chinpakamon}}
+\faCenter{envelope} \color{blue}\href{mailto:zackieffv@yandex.ru}{zackieffv@yandex.ru} &
+\faCenter{phone-alt} +7-917-894-07-09 &
+\faCenter{github} \color{blue}\href{https://github.com/Chinpakamon}{GitHub}
+\faTelegram{\color{blue} \href{https://t.me/Chinpakamon}{Chinpakamon}}
 \end{tabular}
 \end{center}
 
-\vspace{-1.5em}
+\vspace{-1.2em}
 
-\section{Education}
+% -------- PROFILE --------
+\section{Profile}
+Backend Software Engineer with experience in distributed microservices, search, and recommendation systems using Python and FastAPI.
 
-% The datetabular environment takes one argument, which is the width of the left date column. As seen here:
-%   9em is a good choice for "dual-date" formats (e.g. Sep 2015 - Nov 2019).
-%   4em is a good choice for month/year dates (Sep 2014).
-%   2em is a good choice for year-only dates (as seen in the publications)
-\begin{datetabular}{9em}
-% This is just a tabular environment, for the most part. The dateentry command has been defined for
-% convienence. It takes two arguments, the first is the date and the second is whatever you wish placed to the right.
-
-\dateentry{Sep 2019 -- June 2023}{
-\textbf{Saint Petersburg State University of Industrial Technologies and Design}
-
-\textit{Bachelor of science in applied mathematics and computer science}
-}
-
- 
-
-\end{datetabular}
-\begin{datetabular}{9em}
-\dateentry{Aug 2022 -- June 2023}{
-\textbf{Yandex Practicum}
-
-\textit{Learning Python Development and Frameworks}
-}
-
-\end{datetabular}
-
-\begin{datetabular}{9em}
-\dateentry{Sep 2023 -- Now}{
-\textbf{ITMO University}
-
-\textit{Programming and Internet technologies}
-}
-\end{datetabular}
-
-\begin{datetabular}{9em}
-\dateentry{Sep 2024 -- Now}{
-\textbf{Backend Academy of T-Bank}
-
-\textit{Study of programming, databases, application architecture.}
-}
-
-\end{datetabular}
-
+% -------- EXPERIENCE --------
 \section{Experience}
 
 \begin{datetabular}{9em}
-\dateentry{Mar 2024 -- Jun 2024}{
-\textbf{NIL IT}
-
-\textit{Developed web applications, bots and supported existing company projects.}
+\dateentry{Jan 2025 -- Present}{
+\textbf{LLC "ITFox"}
+\begin{itemize}
+    \item Developed asynchronous microservices using FastAPI and asyncio for a production distributed system.
+\end{itemize}
 }
 \end{datetabular}
 
 \begin{datetabular}{9em}
 \dateentry{Aug 2024 -- Dec 2024}{
 \textbf{LLC "Innovative Technologies"}
-
-\textit{Developed asynchronous microservices using FastAPI and asyncio.}
+\begin{itemize}
+    \item Developed backend microservices using FastAPI and PostgreSQL.
+\end{itemize}
 }
 \end{datetabular}
- 
-\section{Skills}
 
-\textbf{Technical}
- \begin{itemize}
-   \item Python, Golang, Django, DRF, FastAPI, asyncio, PostgreSQL, SQLite, SQL, Yandex.Cloud, Docker, Nginx, Linux, Git
-   \end{itemize}
-   \vspace{0.5cm}
-   
-\textbf{Languages}
- \begin{itemize}
-   \item English(B1), Russian(native)
-   \end{itemize}
-   \vspace{0.5cm}
+\begin{datetabular}{9em}
+\dateentry{Mar 2024 -- Jun 2024}{
+\textbf{NIL IT}
+\begin{itemize}
+    \item Developed web applications and Telegram bots; supported existing projects.
+\end{itemize}
+}
+\end{datetabular}
+
+% -------- PROJECTS --------
 \section{Projects}
 
-\textbf{Usermanagment microservice}
+\textbf{ITFox — Project for "Kassir" Company}
 \begin{itemize}
-    \item  An asynchronous microservice designed to interact with the user, provide access depending on the role, change data, etc.
-    \item used Python, FastAPI, PostgreSQL, Redis, RabbitMQ, Poetry, Docker and Docker Compose, Pydantic Settings, Linters: black, isort, ruff.
-    \end{itemize}
-    \vspace{0.5cm}
+    \item Developed microservices for a high-load distributed ticketing platform.
+    \item Built and integrated a full-text search service using Meilisearch.
+    \item Implemented ticket availability and sales widgets.
+    \item Contributed to a recommendation system for events and venues.
+    \item Tech stack: Python, FastAPI, PostgreSQL, Redis, RabbitMQ, gRPC, Docker, Kubernetes.
+\end{itemize}
 
 \textbf{Novis}
 \begin{itemize}
-    \item  Web application for accounting and interaction with foreign students at the university, working with them, delivering news and documents within the university
-    \item used Python, Django, Django Rest Framework, PostgreSQL, Docker and Docker Compose, etc. 
-    \end{itemize}
-    \vspace{0.5cm}
+    \item Developed a web application for managing international university students.
+    \item Implemented REST APIs for document delivery and news distribution.
+    \item Tech stack: Python, Django, DRF, PostgreSQL, Docker.
+\end{itemize}
 
-\textbf{Foodgram}\href{https://github.com/Chinpakamon/foodgram-project-react}{\color{blue}\faCenter{github}}
- \begin{itemize}
-   \item  On this service, users can post recipes, subscribe to other posts, add favorite recipes to their Favorites list, and download a summary of the products they need before going to the store to prepare one or more selected dishes
-   \item used Python, Django, DRF, Gunicorn, Nginx, Docker, Docker-compose, PostgreSQL, drf-simlejwt
-   \end{itemize}
+% -------- SKILLS --------
+\section{Skills}
+
+\textbf{Technical}
+\begin{itemize}
+    \item Python, Go; FastAPI, Django, DRF, asyncio; PostgreSQL, SQLite; Docker, Kubernetes, Nginx, Linux; Redis, Git
+\end{itemize}
+
+\textbf{Languages}
+\begin{itemize}
+    \item English — B1, Russian — Native
+\end{itemize}
+
+% -------- EDUCATION --------
+\section{Education}
+
+\begin{datetabular}{9em}
+\dateentry{Sep 2023 -- Present}{
+\textbf{ITMO University} — Programming and Internet Technologies
+}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Sep 2019 -- Jun 2023}{
+\textbf{SPb University of Industrial Technologies and Design} — B.Sc. in Applied Mathematics and Computer Science
+}
+\end{datetabular}
+
+\begin{datetabular}{9em}
+\dateentry{Aug 2022 -- Jun 2023}{
+\textbf{Yandex Practicum} — Python Backend Development
+}
+\end{datetabular}
 
 \end{document}
-
